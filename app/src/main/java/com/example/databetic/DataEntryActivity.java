@@ -1,4 +1,4 @@
-package com.example.databetic;
+package com.example.javadatabetic;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.databetic;
+package com.example.javadatabetic;
 
 public class EditDataActivity {
 }

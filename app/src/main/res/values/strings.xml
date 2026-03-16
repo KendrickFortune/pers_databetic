@@ -43,4 +43,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="appTitle">Databetic</string>
+    <string name="data_entry_button">Enter Data</string>
+    <string name="data_view_button">View Data</string>
+    <string name="settings_button">Settings</string>
 </resources>

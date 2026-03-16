@@ -1,20 +1,14 @@
-package com.example.databetic;
+package com.example.javadatabetic;
 
 import android.os.Bundle;
-
 import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
-
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import com.example.databetic.databinding.ActivityMainBinding;
-
+import com.example.javadatabetic.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -36,11 +30,29 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        binding.buttonDataEntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
+                Snackbar.make(view, "Add to data", Snackbar.LENGTH_LONG)
+                        .setAnchorView(R.id.button_dataEntry)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        binding.buttonViewData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "View data", Snackbar.LENGTH_LONG)
+                        .setAnchorView(R.id.button_viewData)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        binding.buttonSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Configure settings", Snackbar.LENGTH_LONG)
+                        .setAnchorView(R.id.button_settings)
                         .setAction("Action", null).show();
             }
         });
